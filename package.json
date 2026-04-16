@@ -5,12 +5,15 @@
   "private": true,
   "license": "UNLICENSED",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.x"
   },
   "scripts": {
+    "start": "node server.js",
     "dev": "node server.js",
-    "start": "node server.js"
+    "deploy:vercel": "vercel --prod"
   },
-  "dependencies": {},
-  "type": "module"
+  "devDependencies": {
+    "vercel": "^34.0.0"
+  },
+  "main": "server.js"
 }

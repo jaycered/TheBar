@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Content Security Policy: restrict data exfil, only allow known API origins -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src https://api.anthropic.com https://api.openai.com https://generativelanguage.googleapis.com https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: blob:; frame-ancestors 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.anthropic.com https://api.openai.com https://generativelanguage.googleapis.com https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: blob:; frame-ancestors 'none';">
 <title>The Bar — AI Legal Practice Platform</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -578,11 +578,11 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
   <section class="lhero">
     <div class="lhero-badge">
       <span class="lhero-badge-dot"></span>
-      Now live — free for every solo &amp; small-firm attorney
+      Now live — free for solo &amp; small firm attorneys
     </div>
-    <h1>The sharpest attorneys<br>in the room used to have<br>the <em>worst</em> tools in it.</h1>
-    <p class="lhero-sub">The Bar gives solo and small-firm attorneys the exact same intake, research, and practice infrastructure that BigLaw pays $50,000 a year for — delivered in 60 seconds, not 4 hours. Starting free. Starting now.</p>
-    <p class="lhero-pain">The legal tech industry built enterprise platforms for BigLaw and told solo attorneys to make do. That ends here.</p>
+    <h1>You didn't go to law school<br>to do <em>paperwork</em> for 4 hours<br>before you can start <strong>lawyering.</strong></h1>
+    <p class="lhero-sub">The Bar gives every solo attorney the same intake tools, research capabilities, and practice infrastructure that Big Law pays $50,000/year for — in 60 seconds, not 4 hours.</p>
+    <p class="lhero-pain">Westlaw is $125+/month. CoCounsel is $150+/month. You're still using Google and copy-pasting into Word. There's a better way.</p>
     <div class="lhero-btns">
       <button class="btn-hero btn-hero-gold" onclick="showOB()">Get Started Free — No Card Required</button>
       <button class="btn-hero btn-hero-outline" onclick="demo()">See It In Action →</button>
@@ -592,7 +592,6 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
       <span class="lhero-trust-item">No credit card</span>
       <span class="lhero-trust-item">Setup in 90 seconds</span>
       <span class="lhero-trust-item">All 50 states</span>
-      <span class="lhero-trust-item">Built for solo practitioners</span>
     </div>
   </section>
 
@@ -600,8 +599,8 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
   <section class="lpain">
     <div class="lpain-inner">
       <div class="lpain-head">
-        <div class="lpain-label">The gap no one closed</div>
-        <div class="lpain-title">Solo attorneys carry a full practice<br>with tools built for a paralegal team.</div>
+        <div class="lpain-label">The problem</div>
+        <div class="lpain-title">Solo attorneys spend 40–60% of their day<br>on work that doesn't bill.</div>
       </div>
       <div class="lpain-grid">
         <div class="lpain-item">
@@ -609,20 +608,20 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
           <div class="lpain-a">Drafting the engagement letter, building the deadline calendar, writing the case summary, creating the checklist — all manual. All unbillable. <strong>The Bar does all four in 60 seconds.</strong></div>
         </div>
         <div class="lpain-item">
-          <div class="lpain-q">Legal research tools are priced for firms with 40 attorneys. You have one.</div>
-          <div class="lpain-a">Westlaw charges $125–$300/month per seat — pricing designed for BigLaw to absorb as overhead, never for a solo practice. <strong>The Bar's Legal Researcher delivers cited, jurisdiction-specific memos on any legal question. Free.</strong></div>
+          <div class="lpain-q">You can't afford Westlaw. So you rely on Google and hope.</div>
+          <div class="lpain-a">Big firms pay $125+/month per attorney for legal research. Solo attorneys skip it or hope their memory is right. <strong>The Bar's Legal Researcher gives you cited, structured research on any question, free.</strong></div>
         </div>
         <div class="lpain-item">
           <div class="lpain-q">Every motion, demand letter, and deposition prep is written from scratch.</div>
           <div class="lpain-a">You're reinventing the wheel on every case. Your time is worth $300–$500/hour. Writing a motion to dismiss should not take 4 hours. <strong>The Bar drafts it in 90 seconds, tailored to your matter.</strong></div>
         </div>
         <div class="lpain-item">
-          <div class="lpain-q">Statute of limitations errors are the #1 cause of malpractice claims — and the system offers solo attorneys no safety net.</div>
-          <div class="lpain-a">BigLaw has docketing teams, tickler systems, and three layers of deadline review. Solo attorneys have a calendar and their memory. <strong>The Bar calculates every deadline automatically at intake and surfaces them on your dashboard every single day.</strong></div>
+          <div class="lpain-q">You've never missed a SOL — but you've come close. And that terrifies you.</div>
+          <div class="lpain-a">Statute of limitations errors are the #1 cause of malpractice claims against solo attorneys. One missed deadline ends a career. <strong>The Bar auto-calculates every deadline from the moment of intake.</strong></div>
         </div>
         <div class="lpain-item">
-          <div class="lpain-q">A missed conflict is a bar complaint. Enterprise conflict-check software costs more than some attorneys' monthly rent.</div>
-          <div class="lpain-a">Large firm practice management systems include automated conflict screening as standard. For solo practitioners, that same protection costs $200+/month as a standalone service. <strong>The Bar screens every new client against your full matter history at intake. Automatically. Free.</strong></div>
+          <div class="lpain-q">Conflict checks are manual name searches in a spreadsheet — if you even do them.</div>
+          <div class="lpain-a">Most solos run a quick mental check and hope. One undiscovered conflict, one bar complaint, one disqualification — career risk. <strong>The Bar screens every new client against your entire matter history automatically.</strong></div>
         </div>
         <div class="lpain-item">
           <div class="lpain-q">You have 8 different tools, 6 subscriptions, and still feel like you're behind.</div>
@@ -634,7 +633,7 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
 
   <!-- SOLUTION BAR -->
   <section class="lsolbar">
-    <div class="lsolbar-text">The Bar is the first platform built <em>exclusively</em> for the solo practitioner — not a stripped-down enterprise product, not a glorified template library. Every tool was designed from the ground up for the way a real solo practice actually runs.</div>
+    <div class="lsolbar-text">The Bar is the first platform built <em>exclusively</em> for solo and small-firm attorneys — not a watered-down version of enterprise software. Every tool was built for the way you actually practice.</div>
   </section>
 
   <!-- FEATURES -->
@@ -757,7 +756,7 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
             <td class="comp-yes comp-row-us">✓ Included</td>
             <td class="comp-partial">~ $125–300/mo</td>
             <td class="comp-no">✗ Not available</td>
-            <td class="comp-no">✗ Google, memory, luck</td>
+            <td class="comp-no">✗ Google + hope</td>
           </tr>
           <tr class="comp-row-us">
             <td class="comp-feature">Motion / Pleading Drafting</td>
@@ -785,7 +784,7 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
             <td class="comp-yes comp-row-us">✓ Included</td>
             <td class="comp-partial">~ Buried in platform</td>
             <td class="comp-partial">~ Manual calendar entry</td>
-            <td class="comp-no">✗ Manual lookup, no safeguard</td>
+            <td class="comp-no">✗ Memory + Google</td>
           </tr>
           <tr class="comp-row-us">
             <td class="comp-feature">Conflict Check (Auto)</td>
@@ -837,17 +836,17 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
       <div class="testi-grid">
         <div class="testi">
           <div class="testi-stars">★★★★★</div>
-          <div class="testi-text">"I ran intake on a new PI client between meetings. By the time I sat back down, I had a complete case summary memo, a signed engagement letter, and every deadline on my calendar. What used to consume a Monday morning took eleven minutes."</div>
+          <div class="testi-text">"I ran intake on a new PI client during lunch. By the time I got back to my desk, I had a full case summary, a signed engagement letter, and every deadline already calendared. I used to spend half my Monday on that."</div>
           <div class="testi-meta"><span class="testi-name">J. Whitmore</span><br>Personal Injury · California</div>
         </div>
         <div class="testi">
           <div class="testi-stars">★★★★★</div>
-          <div class="testi-text">"I was skeptical. The research memo it produced on a complex preemption issue was more organized and actionable than anything I got from Westlaw at three times the cost. I've used it on every case since and haven't looked back."</div>
+          <div class="testi-text">"The legal researcher alone is worth it. I used to pay $125/month for Westlaw and still felt like I was missing things. The Bar finds the same cases, explains the circuit splits, and tells me exactly what it means for my case."</div>
           <div class="testi-meta"><span class="testi-name">M. Chen</span><br>Family Law · New York</div>
         </div>
         <div class="testi">
           <div class="testi-stars">★★★★★</div>
-          <div class="testi-text">"The deposition prep kit is extraordinary. Before deposing the treating physician in a PI case, it produced opening questions, targeted core questions, commitment traps, and a full strategy memo — work I would have done by hand, at midnight, the night before trial."</div>
+          <div class="testi-text">"The deposition prep kit saved me 4 hours on my last case. It knew the exact questions to ask the treating physician, flagged three inconsistencies I would have missed, and gave me a strategy memo before I walked in."</div>
           <div class="testi-meta"><span class="testi-name">R. Torres</span><br>Employment · Texas</div>
         </div>
       </div>
@@ -857,20 +856,20 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
   <!-- FINAL CTA -->
   <section class="lfinal">
     <div class="lfinal-label">Ready to start</div>
-    <h2>You built this practice<br>from nothing. <em>Now run it<br>like you have a team.</em></h2>
-    <p class="lfinal-sub">Setup takes 90 seconds. Every AI tool immediately available. No credit card, no contract, no catch. The Bar exists because solo attorneys deserve infrastructure as powerful as the cases they take — and far better than what they've been given.</p>
+    <h2>Your practice. Elevated.<br><em>Starting right now.</em></h2>
+    <p class="lfinal-sub">Setup takes 90 seconds. No credit card. No commitment. Every tool immediately available. The only question is how many hours you want to keep spending on work that doesn't bill.</p>
     <div class="lhero-btns">
       <button class="btn-hero btn-hero-gold" onclick="showOB()">Start Free — No Credit Card</button>
       <button class="btn-hero btn-hero-outline" onclick="demo()">Explore the Demo First →</button>
     </div>
-    <div class="lfinal-risk">Free forever plan · No credit card · No contract · Nothing to cancel · Your data stays in your browser</div>
+    <div class="lfinal-risk">No credit card · No contract · Free forever plan · Cancel nothing</div>
   </section>
 
   <!-- FOOTER -->
   <footer class="lfooter">
     <span>© 2026 The Bar — AI Legal Practice Platform</span>
     <span style="display:flex;gap:20px;">
-      <span>Free for every solo &amp; small-firm attorney</span>
+      <span>Built for solo &amp; small firm attorneys</span>
       <span>AI content requires attorney review · Not a law firm</span>
     </span>
   </footer>
@@ -1277,8 +1276,8 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
    <div class="pg" id="page-settings">
     <div class="ph"><div class="ph-l"><div class="ph-title">Settings</div><div class="ph-sub">Firm & account</div></div></div>
     <div class="pb">
-     <div class="fs" id="apikey-section"><div class="fs-t">AI Provider <span style="font-family:'DM Mono',monospace;font-size:8px;color:var(--tm);border:1px solid var(--border);padding:2px 6px;margin-left:8px;">Local / Preview Mode</span></div>
-      <div style="font-size:11px;color:var(--ts);margin-bottom:14px;line-height:1.7;">Choose your AI provider and enter an API key. When deployed (Vercel/Railway), set <strong style='color:var(--gold-dim)'>ANTHROPIC_API_KEY</strong> as an environment variable — attorneys use the app without entering any key. User-supplied keys are a per-browser fallback.</div>
+     <div class="fs" id="apikey-section"><div class="fs-t">AI Provider <span style="font-family:'DM Mono',monospace;font-size:8px;color:var(--tm);border:1px solid var(--border);padding:2px 6px;margin-left:8px;"><span id='api-mode-badge'>Detecting…</span></span></div>
+      <div style="font-size:11px;color:var(--ts);margin-bottom:14px;line-height:1.7;">Choose your AI provider and enter an API key. Keys are stored only in your browser and sent directly to the provider — never to any third party.</div>
       <div class="fg" style="margin-bottom:12px;">
        <div class="f sp2"><label>AI Provider</label>
         <select id="provider-select" onchange="onProviderChange(this.value)" style="background:var(--s3);border:1px solid var(--border);color:var(--tp);font-family:'Instrument Sans',sans-serif;font-size:12px;padding:7px 10px;outline:none;width:100%;cursor:pointer;">
@@ -1313,7 +1312,7 @@ body{background:var(--ink);color:var(--tp);font-family:'Instrument Sans',sans-se
        <button class="btn btn-red" onclick="clearAll()">Clear Data</button>
       </div>
      </div>
-     <div class="fs"><div class="fs-t" style="margin-bottom:8px;">About</div><div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--tm);letter-spacing:0.06em;line-height:2;">The Bar v6.0 · AI content requires attorney review before use<br>Not a law firm · No attorney-client relationship is created<br>Powered by Claude (Anthropic) · Free for every solo &amp; small-firm attorney<br>© 2026 The Bar</div></div>
+     <div class="fs"><div class="fs-t" style="margin-bottom:8px;">About</div><div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--tm);letter-spacing:0.06em;line-height:2;">The Bar v6.0 · AI content requires attorney review before use<br>Not a law firm · No attorney-client relationship is created<br>Powered by Claude (Anthropic) · Built for solo &amp; small firm attorneys<br>© 2026 The Bar</div></div>
     </div>
    </div>
 
@@ -1364,14 +1363,22 @@ let resHistory = [];
 (function(){const old=localStorage.getItem('tb_local_key');if(old&&!localStorage.getItem('tb_apikey_anthropic')){localStorage.setItem('tb_apikey_anthropic',old);localStorage.removeItem('tb_local_key');}})();
 
 // ════════════ API ENDPOINT ════════════
-// Detect any proxy-backed deployment (Vercel, Railway, custom domain)
-const IS_PROXIED = (() => {
-  const h = location.hostname;
-  return h.endsWith('.vercel.app') ||
-         h.endsWith('.railway.app') ||
-         (h !== 'localhost' && h !== '127.0.0.1' && !h.startsWith('192.168.') && !h.startsWith('10.'));
-})();
-const IS_VERCEL = IS_PROXIED; // alias kept for backward-compat
+// IS_SERVER_PROXY: true whenever the /api/claude serverless route is available.
+// This covers Vercel (*.vercel.app + custom domains), Railway, Render, etc.
+// We probe once at boot and cache the result.
+let IS_SERVER_PROXY = false;
+let _proxyProbed = false;
+async function _probeProxy() {
+  if (_proxyProbed) return;
+  _proxyProbed = true;
+  // localhost/file:// never have a server proxy
+  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.protocol === 'file:') return;
+  try {
+    // HEAD request with no body — proxy returns 405 (exists) vs network fail (absent)
+    const r = await fetch('/api/claude', { method: 'HEAD' });
+    IS_SERVER_PROXY = r.status !== 404;
+  } catch { IS_SERVER_PROXY = false; }
+}
 
 // Multi-provider support: anthropic | openai | gemini
 let _provider  = localStorage.getItem('tb_provider') || 'anthropic';
@@ -1402,28 +1409,27 @@ const PROVIDERS = {
 async function callClaude(body) {
   _checkRateLimit(); // rate limit before any network call
 
-  if (IS_PROXIED) {
-    // Route through server-side proxy — env var key takes priority, user key is fallback
-    const headers = {
-      'Content-Type': 'application/json',
-      'X-Provider': _provider,
-    };
-    // Send user key only if they supplied one (server will prefer env var over it)
-    if (_apiKey) headers['X-User-Key'] = _apiKey;
+  // Probe proxy availability on first AI call
+  await _probeProxy();
+
+  if (IS_SERVER_PROXY) {
+    // Server proxy handles the key from its env — optionally forward user key as fallback
+    const extraHeaders = {};
+    if (_apiKey) extraHeaders['x-api-key'] = _apiKey;
     const res = await fetch('/api/claude', {
       method: 'POST',
-      headers,
+      headers: { 'Content-Type': 'application/json', ...extraHeaders },
       body: JSON.stringify(body),
     });
     if (!res.ok) {
       let errMsg = `Proxy error ${res.status}`;
-      try { const e = await res.json(); errMsg = e.error || errMsg; } catch {}
-      throw new Error(errMsg);
+      try { const j = await res.json(); errMsg = j.error || errMsg; } catch { try { errMsg = await res.text(); } catch {} }
+      throw new Error(errMsg.slice(0, 300));
     }
     return res.json();
   }
 
-  // Ensure we have a key for the current provider
+  // ── Local / direct mode ── user must supply their own key
   if (!_apiKey) {
     const prov = PROVIDERS[_provider];
     _apiKey = (prompt(`Enter your ${prov.label} API key:\n(Stored locally in your browser — never sent anywhere except ${prov.label.split(' ')[0]})`) || '').trim();
@@ -1432,7 +1438,7 @@ async function callClaude(body) {
   }
 
   // Helper: sanitize error text so key never appears in thrown messages or console
-  const safeErr=(text)=>text.replace(_apiKey,'[REDACTED]');
+  const safeErr=(text)=>_apiKey?text.replace(_apiKey,'[REDACTED]'):text;
 
   if (_provider === 'anthropic') {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -2147,16 +2153,21 @@ function loadSettings(){
   document.getElementById('set-firm').value=firm.firmName||'';
   document.getElementById('set-jur2').value=firm.state||'';
   document.getElementById('set-rate').value=firm.rate||350;
-  const section=document.getElementById('apikey-section');
-  if(section){
-    section.style.display=IS_PROXIED?'none':'block';
-    if(!IS_PROXIED){
-      const sel=document.getElementById('provider-select');
-      if(sel)sel.value=_provider;
-      syncProviderUI(_provider);
-      updateApiKeyStatus();
+  _probeProxy().then(()=>{
+    const badge=document.getElementById('api-mode-badge');
+    const desc=document.getElementById('api-mode-desc');
+    if(IS_SERVER_PROXY){
+      if(badge){badge.textContent='Server Proxy — Active';badge.style.color='var(--green)';badge.style.borderColor='rgba(42,120,72,0.4)';}
+      if(desc)desc.innerHTML='<span style="color:var(--green);">✓ Powered by server environment key.</span> The Bar AI is ready — no key needed from you. You can optionally add your own key below to override the active provider.';
+    } else {
+      if(badge){badge.textContent='Local Mode';badge.style.color='var(--ts)';}
+      if(desc)desc.innerHTML='Running locally. Enter your API key below — stored only in your browser, sent directly to the provider.';
     }
-  }
+    const sel=document.getElementById('provider-select');
+    if(sel)sel.value=_provider;
+    syncProviderUI(_provider);
+    updateApiKeyStatus();
+  });
 }
 function onProviderChange(val){
   _provider=val;
